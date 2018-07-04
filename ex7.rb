@@ -3,8 +3,7 @@ require 'rack'
 
 class MiPrimeraWebApp
  def call(env)
-  [000, {}, []]
+  [200, {'Content-Type' => 'text/html'}, ['<p>hola hola hola hola hola hola hola hola hola hola </p>']]
  end
 end
-
 run MiPrimeraWebApp.new
